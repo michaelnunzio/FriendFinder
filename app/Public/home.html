@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+<!--BOOTSTRAP LINKS AND J QUERY-->
+<link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href= "/style/style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<style> /*STYLE.css move later*/
+#appName{
+    text-align: center;
+    font-weight: bold;
+    font-size: 75;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+#head2{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#head3{ 
+font-weight: bold;
+text-align: center;
+}
+
+#jumbo {
+    text-align:center;
+    background-color: rgb(158, 154, 154);
+    padding:30px;
+    /* background-image: url("images/friendFinderimg.webp")    fix */
+}
+
+
+/*STYLE.css move later*/</style>
+
+</head>
+<body>
+
+    <div class= "container">
+            <div id="jumbo">
+                    <h1 class="display-4" id="appName">FriendsFinder</h1>
+                    <p class="lead" id="head2">Just answer a few questions for us to get your perfect match!</p>
+                    <hr class="my-4">
+                    <p id="head3">It's <b><i>KINDA</i></b> like Tinder... but more appropriate. Finder?</p>
+                    <p class="lead">
+                      <a class="btn btn-danger btn-lg" href="/survey" role="button">Survey!</a>
+                    </p>
+                  </div> <!--Jumbotron end-->
+            <!--ADD FULL API LATER LINKS LATER-->
+
+            <div class= "col-sm-6">
+                <a class="btn btn-danger btn-sm" href="/api/friends" role="button">Friends API</a> <!--fir testing, turn to link later-->
+            </div>
+    </div>
+
+    
+    
+</body>
+</html>
