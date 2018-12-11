@@ -9,7 +9,7 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3001;
 
-app.use(express.static('./public'))
+app.use(express.static('./app/public'))
 
 
 // Sets up the Express app to handle data parsing
