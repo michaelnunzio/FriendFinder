@@ -10,18 +10,66 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<style> /*STYLE.css move later*/
+
+  body{
+      background-color:lightgray;
+  }
+  #appName{
+      text-align: center;
+      font-weight: bold;
+      font-size: 75;
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: 3px 3px black;
+  }
+  
+  #head2{
+      text-align: center;
+      font-weight: bold;
+  
+  }
+  
+  #head3{ 
+  font-weight: bold;
+  text-align: center;
+  }
+  
+  #jumbo {
+      /* background-image: url("/Images/stepBros.jpg"); */
+      text-align:center;
+      background-color: teal;
+      padding:30px;
+      padding-bottom: 100px;
+      width: 100%;
+      background-size: cover;
+  
+  }
+  
+  
+  /*STYLE.css move later*/</style>
 
 </head>
 <body>
 
-    <div class= "container">
-        <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Survey Questions!</h1>
-                    <p class="lead">Answer The Questions Below!</p>
-                </div>
-        </div>
+    <div class= "container-fluid">
+      <div class="row">
+          
+        <div class="jumbotron-fluid" id="jumbo">
+                <h1 class="display-4" id="appName">Survey Questions!</h1>
+                <p class="lead" id="head2">Answer The Questions Below To Get Your <i><b>Perfect</b></i> Match</p>
+                <hr class="my-4">
+                <p class="lead">
+                  <a class="btn btn-danger btn-lg" href="/" role="button">Home</a>
+                </p>
+              </div> <!--Jumbotron end-->
+         
+        </div> <!--row end-->
+
+  </div>
 <br>
+
+  <div class= "container" id= "quesCont">
        <!--FORM-->
        <form>
             <div class="form-group">
@@ -38,7 +86,7 @@
 
     <!--QUESTIONS-->
       <div class= "col-sm-6">
-          <h1>Question 1</h1>
+          <h4>Question 1</h4>
           <h5>FAKE QUESTION FAKE QUESTION</h5>
             <select class="selectpicker" id="Q1">
                     <option>1 (Stronly Disagree)</option>
@@ -51,7 +99,7 @@
       </div>
 
       <div class= "col-sm-6">
-            <h1>Question 2</h1>
+            <h4>Question 2</h4>
             <h5>FAKE QUESTION FAKE QUESTION</h5>
               <select class="selectpicker" id= "Q2">
                       <option>1 (Stronly Disagree)</option>
@@ -64,7 +112,7 @@
         </div>
 
         <div class= "col-sm-6">
-                <h1>Question 3</h1>
+                <h4>Question 3</h4>
                 <h5>FAKE QUESTION FAKE QUESTION</h5>
                   <select class="selectpicker" id= "Q3">
                           <option>1 (Stronly Disagree)</option>
@@ -77,7 +125,7 @@
             </div>
       
             <div class= "col-sm-6">
-                  <h1>Question 4</h1>
+                  <h4>Question 4</h4>
                   <h5>FAKE QUESTION FAKE QUESTION</h5>
                     <select class="selectpicker" id= "Q4">
                             <option>1 (Stronly Disagree)</option>
@@ -90,7 +138,7 @@
               </div>
 
               <div class= "col-sm-6">
-                    <h1>Question 5</h1>
+                    <h4>Question 5</h4>
                     <h5>FAKE QUESTION FAKE QUESTION</h5>
                       <select class="selectpicker" id= "Q5">
                               <option>1 (Stronly Disagree)</option>
@@ -103,7 +151,7 @@
                 </div>
           
                 <div class= "col-sm-6">
-                      <h1>Question 6</h1>
+                      <h4>Question 6</h4>
                       <h5>FAKE QUESTION FAKE QUESTION</h5>
                         <select class="selectpicker" id= "Q6">
                                 <option>1 (Stronly Disagree)</option>
@@ -116,7 +164,7 @@
                   </div>
           
                   <div class= "col-sm-6">
-                          <h1>Question 7</h1>
+                          <h4>Question 7</h4>
                           <h5>FAKE QUESTION FAKE QUESTION</h5>
                             <select class="selectpicker" id="Q7">
                                     <option>1 (Stronly Disagree)</option>
@@ -129,7 +177,7 @@
                       </div>
                 
                       <div class= "col-sm-6">
-                            <h1>Question 8</h1>
+                            <h4>Question 8</h4>
                             <h5>FAKE QUESTION FAKE QUESTION</h5>
                               <select class="selectpicker" id="Q8">
                                       <option>1 (Stronly Disagree)</option>
@@ -142,7 +190,7 @@
                         </div>
 
                         <div class= "col-sm-6">
-                                <h1>Question 9</h1>
+                                <h4>Question 9</h4>
                                 <h5>FAKE QUESTION FAKE QUESTION</h5>
                                   <select class="selectpicker" id="Q9">
                                           <option>1 (Stronly Disagree)</option>
@@ -155,7 +203,7 @@
                             </div>     
                             
                         <div class= "col-sm-6">
-                                <h1>Question 10</h1>
+                                <h4>Question 10</h4>
                                 <h5>FAKE QUESTION FAKE QUESTION</h5>
                                     <select class="selectpicker" id="Q10">
                                             <option>1 (Stronly Disagree)</option>
@@ -165,7 +213,8 @@
                                             <option>5 (Strongly Agree)</option>
                                         </select>
                                         
-                            </div>                       
+                            </div> 
+                            
     
 
 <br>
@@ -185,7 +234,7 @@ $("#add-btn").on("click", function(event){
     scores: [
               parseInt($("#Q1").val().trim()),
               parseInt($("#Q2").val().trim()),
-              parseInt( $("#Q3").val().trim()),
+              parseInt($("#Q3").val().trim()),
               parseInt($("#Q4").val().trim()),
               parseInt($("#Q5").val().trim()),
               parseInt($("#Q6").val().trim()),
@@ -196,11 +245,12 @@ $("#add-btn").on("click", function(event){
               ]
   };
 
-        //post to friends.js- test... it kind of works. need to figure out how to just send the number for 1 & 5
-        $.post("/api/friends", newFriend).then(function(data){
-          console.log("from Survey.htm", data);
+        //post to friends.js
+        $.post("/api/friends", newFriend).done(function(data){
+          console.log("matched user: " + data.name); //test it- data.name is the name. 
 
-          alert("Adding To Friends List!")
+          alert("Congrats! Your Matching Friend Is...  " + data.name + " !!!!") //displays matched users name....
+
         });
 
   }); //on click end
