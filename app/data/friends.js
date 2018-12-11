@@ -51,3 +51,5 @@ var friends = [//add photos later fam
 ]; //array end
 
 module.exports= friends; //export for use
+
+//PUT EVEYRHTIMG IN QUOTES IN THE ARRAY EACH NUMBER

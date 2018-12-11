@@ -12,6 +12,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <style> /*STYLE.css move later*/
+
+body{
+    background-color: teal;
+}
 #appName{
     text-align: center;
     font-weight: bold;
@@ -33,10 +37,15 @@ text-align: center;
 }
 
 #jumbo {
+    background-image: url("/Images/stepBros.jpg");
     text-align:center;
-    background-color: rgb(158, 154, 154);
+    /* background-color: rgb(158, 154, 154); */
     padding:30px;
-    /* background-image: url("images/friendFinderimg.webp")    fix */
+    padding-bottom: 100px;
+    width: 100%;
+
+    background-size: cover;
+
 }
 
 
@@ -45,8 +54,10 @@ text-align: center;
 </head>
 <body>
 
-    <div class= "container">
-            <div id="jumbo">
+    <div class= "container-fluid">
+        <div class="row">
+          
+            <div class="jumbotron-fluid" id="jumbo">
                     <h1 class="display-4" id="appName">FriendsFinder</h1>
                     <p class="lead" id="head2">Just answer a few questions for us to get your perfect match!</p>
                     <hr class="my-4">
@@ -55,6 +66,8 @@ text-align: center;
                       <a class="btn btn-danger btn-lg" href="/survey" role="button">Survey!</a>
                     </p>
                   </div> <!--Jumbotron end-->
+             
+            </div> <!--row end-->
             <!--ADD FULL API LATER LINKS LATER-->
 
             <div class= "col-sm-6">
@@ -66,3 +79,4 @@ text-align: center;
     
 </body>
 </html>
+
