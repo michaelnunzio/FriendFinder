@@ -5,6 +5,8 @@ var path = require('path');
 module.exports= function(app){
 //get route to display home page
 app.get("/", function(req, res) {
+  console.log(path.join(__dirname, "../public/home.html"))
+  console.log(path.join(__dirname))
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
