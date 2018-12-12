@@ -45,6 +45,10 @@
       background-size: cover;
   
   }
+
+  .selectpicker{
+    margin-bottom: 16px;
+  }
   
   
   /*STYLE.css move later*/</style>
@@ -86,9 +90,9 @@
 
     <!--QUESTIONS-->
       <div class= "col-sm-6">
-          <h4>Question 1</h4>
-          <h5>FAKE QUESTION FAKE QUESTION</h5>
-            <select class="selectpicker" id="Q1">
+          <h5>Question 1</h5>
+          <h7>Your mind is always buzzing with unexplored ideas and plans.</h7>
+            <select class="selectpicker" data-style="btn-primary" id="Q1">
                     <option>1 (Stronly Disagree)</option>
                     <option>2</option>
                     <option>3</option>
@@ -99,9 +103,10 @@
       </div>
 
       <div class= "col-sm-6">
-            <h4>Question 2</h4>
-            <h5>FAKE QUESTION FAKE QUESTION</h5>
-              <select class="selectpicker" id= "Q2">
+      
+            <h5>Question 2</h5>
+            <h7>You rely more on your experience than your imagination.</h7>
+              <select class="selectpicker" data-style="btn-danger" id= "Q2">
                       <option>1 (Stronly Disagree)</option>
                       <option>2</option>
                       <option>3</option>
@@ -112,9 +117,9 @@
         </div>
 
         <div class= "col-sm-6">
-                <h4>Question 3</h4>
-                <h5>FAKE QUESTION FAKE QUESTION</h5>
-                  <select class="selectpicker" id= "Q3">
+                <h5>Question 3</h5>
+                <h7>You find it easy to stay relaxed and focused most of the time.</h7>
+                  <select class="selectpicker" data-style="btn-danger" id= "Q3">
                           <option>1 (Stronly Disagree)</option>
                           <option>2</option>
                           <option>3</option>
@@ -125,9 +130,9 @@
             </div>
       
             <div class= "col-sm-6">
-                  <h4>Question 4</h4>
-                  <h5>FAKE QUESTION FAKE QUESTION</h5>
-                    <select class="selectpicker" id= "Q4">
+                  <h5>Question 4</h5>
+                  <h7>You rarely do something just out of sheer curiosity.</h7>
+                    <select class="selectpicker" data-style="btn-danger" id= "Q4">
                             <option>1 (Stronly Disagree)</option>
                             <option>2</option>
                             <option>3</option>
@@ -138,9 +143,9 @@
               </div>
 
               <div class= "col-sm-6">
-                    <h4>Question 5</h4>
-                    <h5>FAKE QUESTION FAKE QUESTION</h5>
-                      <select class="selectpicker" id= "Q5">
+                    <h5>Question 5</h5>
+                    <h7>It's difficult for others to upset you with their actions</h7>
+                      <select class="selectpicker" data-style="btn-danger" id= "Q5">
                               <option>1 (Stronly Disagree)</option>
                               <option>2</option>
                               <option>3</option>
@@ -151,9 +156,9 @@
                 </div>
           
                 <div class= "col-sm-6">
-                      <h4>Question 6</h4>
-                      <h5>FAKE QUESTION FAKE QUESTION</h5>
-                        <select class="selectpicker" id= "Q6">
+                      <h5>Question 6</h5>
+                      <h7>It is often difficult for you to relate to other people’s feelings.</h7>
+                        <select class="selectpicker" data-style="btn-danger" id= "Q6">
                                 <option>1 (Stronly Disagree)</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -164,9 +169,9 @@
                   </div>
           
                   <div class= "col-sm-6">
-                          <h4>Question 7</h4>
-                          <h5>FAKE QUESTION FAKE QUESTION</h5>
-                            <select class="selectpicker" id="Q7">
+                          <h5>Question 7</h5>
+                          <h7>Truth should be more important than people’s sensitivities.</h7>
+                            <select class="selectpicker" data-style="btn-danger" id="Q7">
                                     <option>1 (Stronly Disagree)</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -177,9 +182,9 @@
                       </div>
                 
                       <div class= "col-sm-6">
-                            <h4>Question 8</h4>
-                            <h5>FAKE QUESTION FAKE QUESTION</h5>
-                              <select class="selectpicker" id="Q8">
+                            <h5>Question 8</h5>
+                            <h7>You rarely get carried away by fantasies and ideas.</h7>
+                              <select class="selectpicker" data-style="btn-danger" id="Q8">
                                       <option>1 (Stronly Disagree)</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -190,9 +195,9 @@
                         </div>
 
                         <div class= "col-sm-6">
-                                <h4>Question 9</h4>
-                                <h5>FAKE QUESTION FAKE QUESTION</h5>
-                                  <select class="selectpicker" id="Q9">
+                                <h5>Question 9</h5>
+                                <h7>You think that everyone’s views should be respected regardless of facts.</h7>
+                                  <select class="selectpicker" data-style="btn-danger" id="Q9">
                                           <option>1 (Stronly Disagree)</option>
                                           <option>2</option>
                                           <option>3</option>
@@ -203,9 +208,9 @@
                             </div>     
                             
                         <div class= "col-sm-6">
-                                <h4>Question 10</h4>
-                                <h5>FAKE QUESTION FAKE QUESTION</h5>
-                                    <select class="selectpicker" id="Q10">
+                                <h5>Question 10</h5>
+                                <h7>You feel more energetic after spending time with a group of people.</h7>
+                                    <select class="selectpicker" id="Q10" data-style="btn-danger">
                                             <option>1 (Stronly Disagree)</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -218,9 +223,15 @@
     
 
 <br>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" id= "add-btn">Submit!</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id= "add-btn">Submit!</button>
+
+            <div class= "col-sm-6">
+                <p>FRIENDS API</p>
+              </div>
+            
 
     </div> <!--Cont end-->
+
 
     <!--Add on click / post to friends array-->
     <script type= "text/javascript">
