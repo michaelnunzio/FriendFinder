@@ -49,6 +49,53 @@
   .selectpicker{
     margin-bottom: 16px;
   }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f57373;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 5px solid teal;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#resulttext{
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px teal;
+
+}
+/*modal end*/
   
   
   /*STYLE.css move later*/</style>
@@ -220,15 +267,22 @@
                                         
                             </div> 
                             
-    
-
 <br>
             <button type="submit" class="btn btn-primary btn-lg btn-block" id= "add-btn">Submit!</button>
 
             <div class= "col-sm-6">
                 <p>FRIENDS API</p>
               </div>
-            
+              
+            <!--MODAL-->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id= "resulttext"></p>
+                </div>
+              <!--MODAL-->
 
     </div> <!--Cont end-->
 
@@ -260,7 +314,34 @@ $("#add-btn").on("click", function(event){
         $.post("/api/friends", newFriend).done(function(data){
           console.log("matched user: " + data.name); //test it- data.name is the name. 
 
-          alert("Congrats! Your Matching Friend Is...  " + data.name + " !!!!") //displays matched users name....
+          // alert("Congrats! Your Matching Friend Is...  " + data.name + " !!!!") //displays matched users name....
+
+          //// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+
+  modal.style.display = "block";
+  $("#resulttext").html("Your New Friend Is... " + data.name + " !!!!!")
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+//modal end
 
         });
 
